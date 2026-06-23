@@ -1,65 +1,385 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="เว็บไซต์แสดงผลงานและทักษะของ Pattaratida">
-    <title>ความภาคภูมิใจของ PATTARATIDA</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Pattaratida Sapuang</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Noto Sans Thai',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(to bottom,#fff7fb,#ffe6f0);
+color:#444;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,.9);
+backdrop-filter:blur(10px);
+padding:15px;
+z-index:1000;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+text-decoration:none;
+color:#d85a8d;
+margin:0 15px;
+font-weight:600;
+}
+
+section{
+padding:100px 10%;
+min-height:100vh;
+}
+
+.hero{
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.hero h1{
+font-size:4rem;
+color:#d85a8d;
+}
+
+.jp{
+font-size:2rem;
+color:#f39ac7;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:1.2rem;
+margin-top:10px;
+}
+
+.card{
+background:white;
+padding:35px;
+border-radius:25px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+margin-top:30px;
+}
+
+h2{
+color:#d85a8d;
+margin-bottom:20px;
+font-size:2.2rem;
+}
+
+h3{
+margin-top:20px;
+color:#c44b79;
+}
+
+.quote{
+font-size:1.4rem;
+font-style:italic;
+color:#c44b79;
+text-align:center;
+padding:20px;
+}
+
+ul{
+padding-left:20px;
+line-height:2;
+}
+
+.info-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.timeline{
+border-left:4px solid #f39ac7;
+padding-left:20px;
+}
+
+.timeline div{
+margin-bottom:25px;
+}
+
+footer{
+text-align:center;
+padding:50px;
+font-size:1.3rem;
+color:#d85a8d;
+}
+
+/* ซากุระ */
+
+.sakura{
+position:fixed;
+top:-10%;
+color:#ff9fc8;
+font-size:25px;
+animation:fall linear infinite;
+pointer-events:none;
+z-index:999;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px) rotate(0deg);
+opacity:1;
+}
+100%{
+transform:translateY(120vh) rotate(360deg);
+opacity:0;
+}
+}
+</style>
 </head>
+
 <body>
 
-    <!-- ส่วนหัวของเว็บ -->
-    <header>
-        <h1>สวัสดี! หนูคือ PATTARATIDA</h1>
-        <p>นี่คือผลงานและความภาคภูมิใจของหนู</p>
-    </header>
+<nav>
+<a href="#home">หน้าแรก</a>
+<a href="#sop">SOP</a>
+<a href="#profile">Profile</a>
+<a href="#strength">จุดแข็ง</a>
+<a href="#education">การศึกษา</a>
+</nav>
 
-    <!-- ส่วนเกี่ยวกับตัวเอง -->
-    <section id="about">
-        <h2>เกี่ยวกับหนู</h2>
-        
-        <img src="profile.jpg" alt="รูปโปรไฟล์" width="250">
-        
-        <p>หนูชอบภาษาและวัฒนธรรมของญี่ปุ่นผ่านสื่อต่าง ๆ เช่น เพลง อนิเมะ และรายการโทรทัศน์ของญี่ปุ่น รวมถึงการฝึกอ่านและเรียนรู้คำศัพท์ใหม่ ๆ อยู่เสมอ เพื่อพัฒนาทักษะทางภาษาและเพิ่มความเข้าใจเกี่ยวกับวัฒนธรรมญี่ปุ่น</p>
-    </section>
+<section id="home" class="hero">
 
-    <!-- ส่วนแสดงผลงาน -->
-    <section id="projects">
-        <h2>ผลงานของหนู</h2>
+<div class="jp">ポートフォリオ</div>
 
-        <div class="project">
-            <h3>เว็บไซต์ Portfolio</h3>
-            <p>เว็บไซต์นี้เป็นหนึ่งในผลงานที่หนูสร้างขึ้นเพื่อแสดงความสามารถของหนู</p>
-        </div>
+<h1>PORTFOLIO</h1>
 
-        <div class="project">
-            <h3>แอปพลิเคชันจัดการงาน</h3>
-            <p>แอปพลิเคชันที่ช่วยให้ผู้ใช้งานจัดการงานได้อย่างมีประสิทธิภาพ</p>
-        </div>
-    </section>
+<div class="card">
 
-    <!-- ส่วนแสดงทักษะ -->
-    <section id="skills">
-        <h2>ทักษะของหนู</h2>
-        <ul>
-            <li>ร้องเพลงได้</li>
-            <li>วาดรูปได้</li>
-            <li>มีทักษะความรู้ด้านภาษาและวัฒนธรรมญี่ปุ่น</li>
-            <li>สามารถทำงานร่วมกับผู้อื่นได้</li>
-        </ul>
-    </section>
+<h2>นางสาวภัทรธิดา สาพ่วง</h2>
 
-    <!-- ส่วนติดต่อและลิขสิทธิ์ -->
-    <footer>
-        <p>ติดต่อหนูได้:
-            <a href="mailto: sodapattaratida@gmail.com">sodapattaratida@gmail.com</a>
-        </p>
-        <p>&copy; <span id="year"></span> PATTARATIDA. All rights reserved. </p>
-    </footer>
+<p>パッタラティダー サープアン</p>
 
-    <!-- ลิงก์ไปยัง JavaScript -->
-    <script src="script.js"></script>
+<br>
+
+<p>โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"</p>
+
+<br>
+
+<p>
+โครงการผลิตครูดี 50 ปี<br>
+มหาวิทยาลัยขอนแก่น<br>
+คณะศึกษาศาสตร์<br>
+สาขาวิชาเอกการสอนภาษาญี่ปุ่น
+</p>
+
+</div>
+
+</section>
+
+<section id="sop">
+
+<h2>Statement of Purpose</h2>
+
+<div class="card">
+
+<div class="quote">
+"ความรักในภาษาญี่ปุ่นทำให้ข้าพเจ้าอยากเรียนรู้
+แต่ความสุขจากการแบ่งปันความรู้ให้ผู้อื่น
+ทำให้ข้าพเจ้าอยากเป็นครู"
+</div>
+
+<p>
+ข้าพเจ้ามีความสนใจในภาษาและวัฒนธรรมญี่ปุ่นจากการเรียน
+และการทำกิจกรรมค่ายภาษาญี่ปุ่นต่างๆ
+รวมถึงการแข่งขันการแสดงเต้นโยซาโคย
+และการสอบวัดระดับภาษาญี่ปุ่น JLPT N5
+</p>
+
+<br>
+
+<p>
+ทำให้ข้าพเจ้าตั้งใจและมุ่งมั่นจะศึกษาต่อ
+สาขาการสอนภาษาญี่ปุ่น คณะศึกษาศาสตร์
+มหาวิทยาลัยขอนแก่น
+เพื่อเป็นครูที่ไม่ได้ให้แค่ความรู้
+แต่ยังมอบโอกาสและสร้างประโยชน์ให้แก่ผู้เรียนและสังคม
+</p>
+
+</div>
+
+</section>
+
+<section id="profile">
+
+<h2>プロフィール | Profile</h2>
+
+<div class="info-grid">
+
+<div class="card">
+
+<h3>ข้อมูลส่วนตัว</h3>
+
+<ul>
+<li>ชื่อเล่น : โซดา</li>
+<li>อายุ : 17 ปี</li>
+<li>วันเกิด : 17 มกราคม 2552</li>
+<li>สัญชาติ : ไทย</li>
+<li>เชื้อชาติ : ไทย</li>
+<li>ศาสนา : พุทธ</li>
+<li>แผนการเรียน : เตรียมมนุษยศาสตร์ภาษาญี่ปุ่น</li>
+<li>อาชีพที่ใฝ่ฝัน : ครูสอนภาษาญี่ปุ่น</li>
+</ul>
+
+</div>
+
+<div class="card">
+
+<h3>ความสามารถพิเศษ</h3>
+
+<ul>
+<li>วาดภาพ</li>
+<li>มีจิตอาสา</li>
+<li>กล้าแสดงออก</li>
+</ul>
+
+<h3>งานอดิเรก</h3>
+
+<ul>
+<li>วาดภาพ</li>
+<li>ดูหนัง</li>
+<li>ฟังเพลง</li>
+<li>ร้องเพลง</li>
+<li>ทำอาหาร</li>
+<li>ทำขนม</li>
+<li>เรียนภาษาญี่ปุ่นด้วยตนเอง</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h3>ข้อมูลครอบครัว</h3>
+
+<p>
+มารดา : นางสาวจันทร์นภา ชัยวรรณ<br>
+อาชีพ : รับจ้างทั่วไป
+</p>
+
+<br>
+
+<p>
+บิดา : นายธีรศักดิ์ สาพ่วง<br>
+(ถึงแก่กรรม)
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>ช่องทางการติดต่อ</h3>
+
+<p>📞 095-114-2600</p>
+<p>📧 sodapattaratida@gmail.com</p>
+
+</div>
+
+</section>
+
+<section id="strength">
+
+<h2>長所・短所</h2>
+
+<div class="info-grid">
+
+<div class="card">
+
+<h3>จุดแข็ง</h3>
+
+<p>
+มีความรับผิดชอบ อดทน และสามารถทำงานร่วมกับผู้อื่นได้ดี
+จากการเข้าร่วมกิจกรรมยุวกาชาดระดับ 4
+ค่ายภาษาญี่ปุ่น และการแสดงโยซาโคย
+ทำให้ได้ฝึกการทำงานเป็นทีม
+การแก้ปัญหาเฉพาะหน้า และการมีจิตสาธารณะ
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>จุดอ่อน</h3>
+
+<p>
+เป็นคนที่ทุ่มเทกับสิ่งที่ได้รับมอบหมายอย่างเต็มที่
+จนบางครั้งใช้เวลากับงานมากเกินไป
+ปัจจุบันกำลังพัฒนาทักษะการบริหารเวลา
+เพื่อรักษาสมดุลระหว่างการทำงานและสุขภาพ
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="education">
+
+<h2>教育 | ประวัติการศึกษา</h2>
+
+<div class="card timeline">
+
+<div>
+<h3>อนุบาลศึกษา</h3>
+<p>โรงเรียนอนุบาลพิมลกิจจานุวัตร</p>
+<p>อนุบาล 1 - 3</p>
+</div>
+
+<div>
+<h3>ประถมศึกษา</h3>
+<p>โรงเรียนเฮงฮั้ว</p>
+<p>ประถมศึกษาปีที่ 1 - 6</p>
+</div>
+
+<div>
+<h3>มัธยมศึกษา</h3>
+<p>โรงเรียนบ้านบึง "อุตสาหกรรมนุเคราะห์"</p>
+<p>มัธยมศึกษาปีที่ 1 - 6</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+🌸 ありがとうございました！ 🌸<br>
+ขอบคุณที่เยี่ยมชมแฟ้มสะสมผลงานของข้าพเจ้า
+</footer>
+
+<script>
+for(let i=0;i<25;i++){
+let sakura=document.createElement("div");
+sakura.classList.add("sakura");
+sakura.innerHTML="🌸";
+sakura.style.left=Math.random()*100+"vw";
+sakura.style.animationDuration=5+Math.random()*10+"s";
+sakura.style.fontSize=15+Math.random()*20+"px";
+document.body.appendChild(sakura);
+}
+</script>
 
 </body>
 </html>
